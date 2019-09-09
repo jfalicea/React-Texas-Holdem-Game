@@ -7,8 +7,10 @@ import PokerTable from './Components/Pokertable';
 
 function App() {
   return (
-    <div className="App">
-      <PokerTable />
+    <div className="App container">
+      <div className="row">
+        <PokerTable />
+      </div>  
     </div>
   );
 }

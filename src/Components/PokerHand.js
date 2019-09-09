@@ -4,11 +4,14 @@ import Card from './Card'
 
 
 function PokerHand(props){
+    console.log(props)
+    const hand = props.cards.map((card, i)=>{
+       return( <Card key={i} card={card} />)
+    })
     return(
         //a poker hand is made up of cards. 
         <div className="poker-hand col-sm-12">
-            <Card />
-            <Card />
+            {hand}
         </div>
     ) 
 }
