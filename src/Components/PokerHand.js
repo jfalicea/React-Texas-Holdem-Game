@@ -4,7 +4,7 @@ import Card from './Card'
 
 
 function PokerHand(props){
-    console.log(props)
+    console.log("pokerhand", props)
     const hand = props.cards.map((card, i)=>{
        return( <Card key={i} card={card} />)
     })
